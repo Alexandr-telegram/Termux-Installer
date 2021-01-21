@@ -8,6 +8,8 @@ echo    ▀▀▀ ▀░░▀ ▀▀░ ░▀░ ▀░▀ ▀▀▀ ▀▀▀
 
 echo                             by Alexandr O
 
+cd ..
+
 apt-get install curl -y
 
 pkg install wget -y
@@ -28,13 +30,21 @@ pkg install hydra -y
 
 pkg install nano -y
 
-echo Все нужные пакеты установлены!Начинается установка metasploit!
+echo ╔═╦═╦═╦╦╦═╦═╦═╦══╗───╔╦═╦╦══╦══╦═╦╗╔╗╔═╦═╗
+echo ║╔╣╩║╠╣═╣╦╣╔╣╦╬╗╚╣───║║║║╠╗╚╬╗╔╣╩║╚╣╚╣╦╣╠║
+echo ╚╝╚╩╩═╩╩╩═╩═╩═╩══╝───╚╩╩═╩══╝╚╝╚╩╩═╩═╩═╩═╝
 
 wget http://raw.githubusercontent.com/Hax4us/Metasploit_termux/master/metasploit.sh
 
 chmod +x metasploit.sh
 
-echo Metasploit установлен! Для запуска метасплоита введите msfconsole после окончания установки!
+
+
+
+echo ╔══╦═╦══╦═╦══╦═╦╗╔═╦╦══╗╔╦═╦╦══╦══╦═╦╗╔╗╔═╦═╗
+echo ║║║║╦╬╗╔╣╩╠╗╚╣╔╣╚╣║║╠╗╔╝║║║║╠╗╚╬╗╔╣╩║╚╣╚╣╦╣╠║
+echo ╚╩╩╩═╝╚╝╚╩╩══╩╝╚═╩═╩╝╚╝─╚╩╩═╩══╝╚╝╚╩╩═╩═╩═╩═╝
+
 
 git clone https://github.com/thewhiteh4t/seeker
 
@@ -42,11 +52,19 @@ git clone https://github.com/xd20111/saycheese
 
 git clone https://github.com/greyli/sayhello
 
+cd sayhello
+
+pip install -r requirements.txt
+
+cd ..
+
 git clone https://github.com/Mebus/cupp
 
 git clone https://github.com/evait-security/weeman
 
-cd weeman chmod +x weeman.py 
+cd weeman chmod +x weeman.py
+
+pip2 install -r requirements.txt 
 
 cd ..
 
@@ -54,15 +72,39 @@ git clone https://github.com/sqlmapproject/sqlmap
 
 git clone https://github.com/649/Memcrashed-DDoS-Exploit/
 
+cd Memcrashed-DDoS-Exploit
+
+pip install -r requirements.txt
+
+cd ..
+
 git clone https://github.com/pentestxr/Fludilka
 
 git clone https://github.com/LimerBoy/Impulse
 
+cd Impulse
+
+pip install -r requirements.txt
+
+cd ..
+
+
+
 git clone https://github.com/Denishnc/b0mb3r
+
+cd b0mb3r
+
+pip install -r requirements.txt
 
 git clone https://github.com/duyet/bruteforce-database
 
-echo Пакет программ из github установлен!
+echo ╔═╦╦╦═╦═╦╦╦═╦══╦══╗╔╦═╦╦══╦══╦═╦╗╔╗╔═╦═╗
+echo ║╔╣╔╣║║╔╣╔╣╩║║║╠╗╚╣║║║║╠╗╚╬╗╔╣╩║╚╣╚╣╦╣╠║
+echo ╚╝╚╝╚═╩═╩╝╚╩╩╩╩╩══╝╚╩╩═╩══╝╚╝╚╩╩═╩═╩═╩═╝
+
+echo ╔══╦═╦╦╦══╦╗╔╦╦╗
+echo ╚╗╔╣╦╣╔╣║║║╚╝╠─╣
+echo ═╚╝╚═╩╝╚╩╩╩══╩╩╝
 
 cd storage
 
@@ -73,6 +115,13 @@ cd WI-FI_Bruteforce
 git clone https://github.com/faizann24/wifi-bruteforcer-fsecurify
 
 echo Программа для брутфорса паролей , установлена!
-echo Все программы были скачаны!
+clear
+
+
+echo ╔═╦╗╔╗─╔═╦╦╦═╦═╦╦╦═╦══╦══╗
+echo ║╩║╚╣╚╗║╔╣╔╣║║╔╣╔╣╩║║║╠╗╚╣
+echo ╚╩╩═╩═╝╚╝╚╝╚═╩═╩╝╚╩╩╩╩╩══╝
+
+
 clear
 echo Спасибо за использование!
